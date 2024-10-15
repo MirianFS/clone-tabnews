@@ -11,6 +11,7 @@ export default async function migrations(request, response) {
   }
 
   let dbClient;
+
   try {
     dbClient = await database.getNewClient();
 
@@ -47,6 +48,3 @@ export default async function migrations(request, response) {
     await dbClient.end();
   }
 }
-
-// https://calpaterson.com/against-database-teardown.html
-// https://news.ycombinator.com/item?id=29764792
