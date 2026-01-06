@@ -41,7 +41,7 @@ async function status(request, response) {
     console.log("\n Erro dentro do cacth do controller:");
     console.error(pupblicErrorObject);
 
-    response.status(500).json({ error: "Internal Server Error" });
+    response.status(500).json(pupblicErrorObject);
   }
 }
 
