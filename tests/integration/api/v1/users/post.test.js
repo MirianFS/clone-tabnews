@@ -63,9 +63,7 @@ describe("POST /api/v1/users", () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          username: "emailduplicado1",
           email: "duplicado@test.com",
-          password: "senha123",
         }),
       });
 
@@ -77,9 +75,7 @@ describe("POST /api/v1/users", () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          username: "emailduplicado2",
           email: "Duplicado@test.com",
-          password: "senha123",
         }),
       });
 
@@ -102,8 +98,6 @@ describe("POST /api/v1/users", () => {
         },
         body: JSON.stringify({
           username: "nameduplicado",
-          email: "nameduplicado@test.com",
-          password: "senha123",
         }),
       });
 
@@ -116,8 +110,6 @@ describe("POST /api/v1/users", () => {
         },
         body: JSON.stringify({
           username: "nameduplicado",
-          email: "nameduplicado@test.com",
-          password: "senha123",
         }),
       });
 
