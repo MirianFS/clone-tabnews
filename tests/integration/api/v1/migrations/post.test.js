@@ -18,7 +18,6 @@ describe("POST to api/v1/migrations", () => {
         expect(response1.status).toBe(201);
 
         const response1Body = await response1.json();
-        console.log(response1Body);
 
         expect(Array.isArray(response1Body)).toBe(true);
         expect(response1Body.length).toBeGreaterThan(0);
@@ -34,7 +33,6 @@ describe("POST to api/v1/migrations", () => {
         expect(response2.status).toBe(200);
 
         const response2Body = await response2.json();
-        console.log(response2Body);
 
         expect(Array.isArray(response2Body)).toBe(true);
         expect(response2Body.length).toBe(0);
