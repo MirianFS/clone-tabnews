@@ -1,5 +1,5 @@
 import { version as uuidVersion } from "uuid";
-import setCookeParser from "set-cookie-parser";
+import setCookieParser from "set-cookie-parser";
 import orchestrator from "tests/orchestrator.js";
 import session from "models/session.js";
 
@@ -136,7 +136,7 @@ describe("POST /api/v1/sessions", () => {
 
       expect(expiresAt - createdAt).toBe(session.EXPIRATION_IN_MILLISECONDS);
 
-      const parsedSetCookie = setCookeParser(response, {
+      const parsedSetCookie = setCookieParser(response, {
         map: true,
       });
 
